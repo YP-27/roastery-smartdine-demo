@@ -429,10 +429,12 @@ async function handleCheckout(e) {
   const webhookUrl = state.config.cafeDetails && state.config.cafeDetails.sheetWebhookUrl;
   if (webhookUrl) {
     try {
+      // No custom headers here on purpose: combined with mode:'no-cors',
+      // an explicit Content-Type can cause some browsers to silently drop
+      // the request. Apps Script reads the raw body text either way.
       fetch(webhookUrl, {
         method: 'POST',
         mode: 'no-cors',
-        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
       });
     } catch (err) {
