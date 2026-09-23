@@ -1,0 +1,132 @@
+{
+  "cafeDetails": {
+    "name": "THE ROASTERY & CO.",
+    "tagline": "Coffee, Kitchen & Community",
+    "hours": "8:00 AM – 11:00 PM",
+    "logoUrl": "logo.png",
+    "whatsappPhone": "917016979567",
+    "currencySymbol": "₹",
+    "themeColor": "#0B1830",
+    "accentColor": "#A97C1E",
+   "sheetWebhookUrl": "https://script.google.com/macros/s/AKfycby97UnA9vB_IYmXq4AmRnGsmviZO4vMs9xUgFCcGSiEWRcuUDkGsH2MVcRN_016hiEy/exec"
+  },
+  "festivalOffer": {
+    "isActive": true,
+    "badge": "FESTIVAL OFFER",
+    "headline": "Festive Celebrations",
+    "subtext": "Free cookie on all specialty coffee orders above ₹399!"
+  },
+  "categories": ["Hot Coffee", "Cold Brews", "Artisan Bites", "Desserts"],
+  "menu": [
+    {
+      "id": "h1",
+      "name": "Classic Cappuccino",
+      "category": "Hot Coffee",
+      "isVeg": true,
+      "price": 160,
+      "description": "Rich espresso topped with steamed milk foam and a dusting of cocoa.",
+      "imageUrl": "https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "h2",
+      "name": "Caramel Macchiato",
+      "category": "Hot Coffee",
+      "isVeg": true,
+      "price": 190,
+      "description": "Espresso, vanilla-steamed milk, and a ribbon of caramel drizzle.",
+      "imageUrl": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "h3",
+      "name": "Masala Chai",
+      "category": "Hot Coffee",
+      "isVeg": true,
+      "price": 90,
+      "description": "Slow-brewed with cardamom, ginger, and cinnamon.",
+      "imageUrl": "https://images.unsplash.com/photo-1571934811356-5cc061b6821f?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "c1",
+      "name": "Iced Hazelnut Latte",
+      "category": "Cold Brews",
+      "isVeg": true,
+      "price": 210,
+      "description": "Double espresso poured over chilled milk and roasted hazelnut syrup.",
+      "imageUrl": "https://images.unsplash.com/photo-1517701550927-30cf4ba1dba5?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "c2",
+      "name": "Cold Brew Original",
+      "category": "Cold Brews",
+      "isVeg": true,
+      "price": 180,
+      "description": "18-hour slow-steeped beans, smooth and low-acid, served over ice.",
+      "imageUrl": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "c3",
+      "name": "Berry Fizz Cooler",
+      "category": "Cold Brews",
+      "isVeg": true,
+      "price": 170,
+      "description": "Mixed berry compote, soda, and fresh mint.",
+      "imageUrl": "https://images.unsplash.com/photo-1497534446932-c925b458314e?w=500",
+      "isAvailable": false
+    },
+    {
+      "id": "a1",
+      "name": "Chicken Club Sandwich",
+      "category": "Artisan Bites",
+      "isVeg": false,
+      "price": 260,
+      "description": "Grilled chicken, smoked bacon, lettuce, and herbed mayo on toasted sourdough.",
+      "imageUrl": "https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "a2",
+      "name": "Paneer Tikka Panini",
+      "category": "Artisan Bites",
+      "isVeg": true,
+      "price": 220,
+      "description": "Spiced grilled paneer, bell peppers, and mint chutney, pressed to order.",
+      "imageUrl": "https://images.unsplash.com/photo-1528736235302-52922df5c122?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "a3",
+      "name": "Loaded Nachos",
+      "category": "Artisan Bites",
+      "isVeg": true,
+      "price": 240,
+      "description": "Crisp corn nachos, molten cheese, salsa, and jalapeños.",
+      "imageUrl": "https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "d1",
+      "name": "Belgian Chocolate Brownie",
+      "category": "Desserts",
+      "isVeg": true,
+      "price": 150,
+      "description": "Warm fudge brownie with a molten dark chocolate centre.",
+      "imageUrl": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500",
+      "isAvailable": true
+    },
+    {
+      "id": "d2",
+      "name": "New York Cheesecake",
+      "category": "Desserts",
+      "isVeg": true,
+      "price": 180,
+      "description": "Classic baked cheesecake on a buttery biscuit crust.",
+      "imageUrl": "https://images.unsplash.com/photo-1524351199678-941a58a3df50?w=500",
+      "isAvailable": true
+    }
+  ]
+}

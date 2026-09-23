@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Digital Menu</title>
+<meta name="description" content="Scan, browse, order — digital menu">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="menu.css">
+</head>
+<body>
+
+<div id="app">
+
+  <!-- Header -->
+  <header class="header">
+    <a href="index.html" class="back-link" aria-label="Back to home">← Home</a>
+    <div class="header-top">
+      <img id="cafeLogo" class="cafe-logo" src="" alt="" />
+      <div class="cafe-id">
+        <h1 id="cafeName"></h1>
+        <p id="cafeTagline"></p>
+      </div>
+      <div class="table-pill" id="tablePill">
+        <span class="table-pill-label">Table</span>
+        <span class="table-pill-value" id="tableValue">—</span>
+      </div>
+    </div>
+    <div class="header-meta">
+      <span id="cafeHours" class="hours"></span>
+      <div class="veg-toggle" id="vegToggle" role="group" aria-label="Filter by diet">
+        <button type="button" class="veg-btn active" data-filter="all">All</button>
+        <button type="button" class="veg-btn" data-filter="veg"><span class="dot dot-veg"></span>Veg</button>
+        <button type="button" class="veg-btn" data-filter="nonveg"><span class="dot dot-nonveg"></span>Non-Veg</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Festival banner -->
+  <div id="festivalBanner" class="festival-banner" hidden>
+    <span class="festival-badge" id="festivalBadge"></span>
+    <p class="festival-headline" id="festivalHeadline"></p>
+    <p class="festival-subtext" id="festivalSubtext"></p>
+  </div>
+
+  <!-- Category nav -->
+  <nav class="category-nav" id="categoryNav" aria-label="Menu categories"></nav>
+
+  <!-- Menu -->
+  <main id="menuSections"></main>
+
+  <p id="emptyState" class="empty-state" hidden>No dishes match this filter right now.</p>
+
+  <!-- Floating cart bar -->
+  <button type="button" id="cartBar" class="cart-bar" hidden>
+    <span class="cart-bar-count" id="cartBarCount">0</span>
+    <span class="cart-bar-label">View order</span>
+    <span class="cart-bar-total" id="cartBarTotal">₹0</span>
+  </button>
+
+</div>
+
+<!-- Cart drawer -->
+<div id="cartOverlay" class="overlay" hidden></div>
+<section id="cartDrawer" class="drawer" hidden aria-label="Your order">
+  <div class="drawer-handle"></div>
+  <div class="drawer-head">
+    <h2>Your order</h2>
+    <button type="button" id="closeCart" class="icon-btn" aria-label="Close">✕</button>
+  </div>
+
+  <div id="cartItems" class="cart-items"></div>
+
+  <div class="cart-summary">
+    <div class="summary-row"><span>Subtotal</span><span id="cartSubtotal">₹0</span></div>
+  </div>
+
+  <form id="checkoutForm" class="checkout-form">
+    <label class="field">
+      <span>Your name</span>
+      <input type="text" id="custName" name="custName" placeholder="Full name" autocomplete="name" required />
+    </label>
+    <label class="field">
+      <span>WhatsApp number</span>
+      <input type="tel" id="custPhone" name="custPhone" placeholder="10-digit mobile number" inputmode="numeric" maxlength="10" autocomplete="tel" required />
+      <small id="phoneError" class="field-error" hidden>Enter a valid 10-digit number</small>
+    </label>
+    <button type="submit" id="placeOrderBtn" class="cta-btn">
+      Confirm &amp; place order on WhatsApp
+    </button>
+  </form>
+</section>
+
+<!-- Toast -->
+<div id="toast" class="toast" hidden></div>
+
+<footer class="powered-by">
+  <span>SmartDine <span class="dot-sep">•</span> powered by <a href="https://trinetranexus.example" target="_blank" rel="noopener">Trinetra Nexus</a></span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

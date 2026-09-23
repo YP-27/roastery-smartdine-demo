@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>THE ROASTERY &amp; CO. — Coffee, Kitchen &amp; Community</title>
+<meta name="description" content="THE ROASTERY & CO. — small-batch coffee and an all-day kitchen. View our menu or reserve a table.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="home.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="site-header-inner">
+    <a href="index.html" class="brand">
+      <img class="brand-logo" src="logo.png" alt="THE ROASTERY & CO. logo" onerror="this.style.display='none'">
+      <span class="brand-text">
+        <span class="brand-name">THE ROASTERY &amp; CO.</span>
+        <span class="brand-badge">SmartDine <span class="dot-sep">•</span> powered by Trinetra Nexus</span>
+      </span>
+    </a>
+    <nav class="site-nav" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#menu-preview">Menu</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <a href="menu.html" class="nav-cta">Order Now</a>
+    <button type="button" class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="site-nav-mobile" id="siteNavMobile" aria-label="Main mobile">
+    <a href="#about">About</a>
+    <a href="#menu-preview">Menu</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#visit">Visit</a>
+    <a href="menu.html" class="nav-cta-mobile">Order Now</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero-bg" src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1600" alt="" loading="eager">
+    <div class="hero-scrim"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Patan, Gujarat</p>
+      <h1>Coffee worth <em>slowing down</em> for.</h1>
+      <p class="hero-sub">Small-batch roasts, an all-day kitchen, and a table that's always ready for you.</p>
+      <div class="hero-actions">
+        <a href="menu.html" class="btn btn-primary">View the menu</a>
+        <a href="#visit" class="btn btn-ghost">Find us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-media">
+      <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=900" alt="Roastery interior, warm wood counters and hanging pendant lights">
+    </div>
+    <div class="about-copy">
+      <p class="section-eyebrow">Our story</p>
+      <h2>Roasted in-house, served without pretense.</h2>
+      <p>THE ROASTERY &amp; CO. started as a single roaster in the back of a friend's garage. Today it's a full kitchen and cafe, but the habit hasn't changed — we roast in small batches, taste everything before it goes on the menu, and keep the room comfortable enough to stay in for a while.</p>
+      <p>Open seven days a week, from the first pour-over of the morning to the last plate at night.</p>
+    </div>
+  </section>
+
+  <!-- Menu preview -->
+  <section class="menu-preview" id="menu-preview">
+    <div class="section-head">
+      <p class="section-eyebrow">From the kitchen</p>
+      <h2>A few things we're known for</h2>
+    </div>
+    <div class="preview-grid">
+      <article class="preview-card">
+        <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=500" alt="Iced hazelnut latte">
+        <h3>Iced Hazelnut Latte</h3>
+        <p>Double espresso, chilled milk, roasted hazelnut syrup.</p>
+        <span class="preview-price">₹210</span>
+      </article>
+      <article class="preview-card">
+        <img src="https://images.unsplash.com/photo-1553909489-cd47e0ef937f?w=500" alt="Chicken club sandwich">
+        <h3>Chicken Club Sandwich</h3>
+        <p>Grilled chicken, smoked bacon, herbed mayo, sourdough.</p>
+        <span class="preview-price">₹260</span>
+      </article>
+      <article class="preview-card">
+        <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=500" alt="Belgian chocolate brownie">
+        <h3>Belgian Chocolate Brownie</h3>
+        <p>Warm fudge brownie, molten dark chocolate centre.</p>
+        <span class="preview-price">₹150</span>
+      </article>
+    </div>
+    <a href="menu.html" class="btn btn-primary preview-cta">See the full menu</a>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="section-head">
+      <p class="section-eyebrow">Inside the roastery</p>
+      <h2>A look around</h2>
+    </div>
+    <div class="gallery-grid">
+      <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=700" alt="Barista pulling an espresso shot">
+      <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=700" alt="Cafe seating area">
+      <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=700" alt="Coffee beans close up">
+      <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=700" alt="Plated pastries on a counter">
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="testimonials">
+    <div class="section-head">
+      <p class="section-eyebrow">Regulars say</p>
+      <h2>Why people keep coming back</h2>
+    </div>
+    <div class="testimonial-grid">
+      <blockquote>
+        <p>"The cold brew alone is worth the trip. The staff remembers my order after one visit."</p>
+        <cite>Meera S.</cite>
+      </blockquote>
+      <blockquote>
+        <p>"Best work-from-cafe spot in the area — fast wifi, quiet corners, great sandwiches."</p>
+        <cite>Arjun P.</cite>
+      </blockquote>
+      <blockquote>
+        <p>"Ordered off the QR menu at our table and it took two minutes, no app download needed."</p>
+        <cite>Divya K.</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Visit / hours / location -->
+  <section class="visit" id="visit">
+    <div class="visit-card">
+      <p class="section-eyebrow">Visit us</p>
+      <h2>THE ROASTERY &amp; CO.</h2>
+      <dl class="visit-details">
+        <div><dt>Address</dt><dd>123 MG Road, Patan, Gujarat 384265</dd></div>
+        <div><dt>Hours</dt><dd>8:00 AM – 11:00 PM, every day</dd></div>
+        <div><dt>Phone</dt><dd>+91 98765 43210</dd></div>
+      </dl>
+      <div class="visit-actions">
+        <a href="menu.html" class="btn btn-primary">Order for takeaway</a>
+        <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="btn btn-ghost">Message on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <span class="brand-name">THE ROASTERY &amp; CO.</span>
+      <p>Coffee, kitchen &amp; community — Patan, Gujarat.</p>
+    </div>
+    <div class="footer-powered">
+      <span>SmartDine <span class="dot-sep">•</span> powered by <a href="https://trinetranexus.example" target="_blank" rel="noopener">Trinetra Nexus</a></span>
+      <p class="footer-note">This is a demo site built to showcase a SmartDine digital-menu deployment.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="home.js"></script>
+</body>
+</html>

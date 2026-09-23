@@ -1,0 +1,38 @@
+:root {
+  --navy-950: #070f22;
+  --navy-900: #0b1830;
+  --navy-800: #12213f;
+  --navy-700: #1a2c4d;
+  --navy-line: rgba(169, 124, 30, 0.22);
+  --gold: #a97c1e;
+  --gold-bright: #cf9c3a;
+  --cream: #f4efe4;
+  --ink-muted: #a9b3cc;
+  --green: #3f9a52;
+  --red: #c0392b;
+  --font-display: 'Plus Jakarta Sans', 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --radius-s: 8px;
+  --radius-m: 14px;
+  --radius-pill: 999px;
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  scroll-padding-top: 118px;
+}
+
+body {
+  margin: 0;
+  background: var(--navy-950);
+  color: var(--cream);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  padding-top: var(--safe-top);
+  padding-bottom: var(--safe-bottom);
+}
+
+img { max-width: 100%; display: block; }
