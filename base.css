@@ -36,3 +36,7 @@ body {
 }
 
 img { max-width: 100%; display: block; }
+
+/* Make the "hidden" attribute always win, even on elements whose own
+   CSS sets a display value (e.g. display:flex for a drawer/cart bar). */
+[hidden] { display: none !important; }
